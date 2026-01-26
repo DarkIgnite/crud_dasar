@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="TAMBAH"></td>
+                <td><input type="submit" value="Edit"></td>
             </tr>
         </table>
     </form>
