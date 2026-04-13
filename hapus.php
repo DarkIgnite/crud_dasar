@@ -1,4 +1,5 @@
 <?php
+
 include 'koneksi.php';
 
 //menangkap id yang di kirim dari halaman index.php
@@ -9,5 +10,3 @@ mysqli_query($koneksi, "DELETE FROM siswa WHERE id='$id'");
 
 //tampil alert dan akan redirect ke halaman index.php
 header("location:index.php");
-
-?>

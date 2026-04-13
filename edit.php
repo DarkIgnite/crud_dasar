@@ -11,12 +11,12 @@
     <?php
         include 'koneksi.php';
 
-        //menangkap id yang di kirim dari halaman index.php
-        $id = $_GET['id'];
-        //mengambil data siswa berdasarkan id yang di kirim
-        $data = mysqli_query($koneksi, "SELECT * FROM siswa WHERE id='$id'");
-        while($d = mysqli_fetch_array($data)){
-    ?>
+    //menangkap id yang di kirim dari halaman index.php
+    $id = $_GET['id'];
+    //mengambil data siswa berdasarkan id yang di kirim
+    $data = mysqli_query($koneksi, "SELECT * FROM siswa WHERE id='$id'");
+    while ($d = mysqli_fetch_array($data)) {
+        ?>
     <form method="POST" action="edit_proses.php">
         <table>
             <tr>
@@ -43,7 +43,7 @@
 
 
     <?php
-        }
+    }
     ?>
 </body>
 </html>
